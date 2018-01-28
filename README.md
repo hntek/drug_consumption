@@ -8,7 +8,7 @@ The analysis is based on the dataset from [Fehrman et al. (2015)](https://arxiv.
 
 - [Report: Who is \"High\"?: Predicting Drug Usage](documents/project_report.md)
 - [Source code of the report](src/project_report.Rmd)
-- [Source Code of the analysis](src/q4_script.ipynb)
+- [Source Code for the analysis](src/q4_script.ipynb)
 
 
 ## Running Relevant Files individually
@@ -20,7 +20,7 @@ python src/analysis.py
 python src/exploratory.py
 Rscript -e "ezknitr::ezknit('src/project_report.Rmd', out_dir = 'documents')"
 ```
-The rendered report can be seen [here](documents/project_report.md)
+The rendered report can be seen [here](documents/project_report.md).
 
 ## Running Automatic Pipeline from the Local Machine
 
@@ -32,7 +32,7 @@ make all
 
 ## Building Docker Image from Dockerfile
 
-When you are on the project root directory in which Makefile resides, you can build the docker image from the Docker file.
+When you are on the project root directory in which Dockerfile resides, you can build the docker image from the Docker file.
 
 ```
 docker build -t drug_consumption .
@@ -40,7 +40,7 @@ docker build -t drug_consumption .
 
 ## Pulling Docker Image from Dockerhub
 
-I have pushed the docker image built. It resides at https://hub.docker.com/r/hntek/drug_consumption/. The pull the docker image, type the following on the bash.
+I have pushed the docker image built to Docker Hub. It resides at https://hub.docker.com/r/hntek/drug_consumption/. To pull the docker image, type the following on the bash.
 ```
 docker pull hntek/drug_consumption
 ```
