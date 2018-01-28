@@ -44,9 +44,11 @@ I have pushed the docker image built to Docker Hub. It resides at https://hub.do
 ```
 docker pull hntek/drug_consumption
 ```
-## Running Automatic Pipeline from the Virtual Machine 
+## Running Automatic Pipeline from the Virtual Machine
 
 ### Running make from the docker volume interactively
+
+Note that you must replace `~/Documents/2017lecture/573_DSCI_2017/lab/drug_consumption` with an appropriate absolute path to the project root directory in which the project lives in your local machine.
 
 ```
 docker run  --rm -it -v ~/Documents/2017lecture/573_DSCI_2017/lab/drug_consumption:/home/drug_consumption drug_consumption /bin/bash
@@ -54,6 +56,9 @@ docker run  --rm -it -v ~/Documents/2017lecture/573_DSCI_2017/lab/drug_consumpti
 make all
 ```
 ### Running make from the docker volume non-interactively
+
+Note that you must replace `~/Documents/2017lecture/573_DSCI_2017/lab/drug_consumption` with an appropriate absolute path to the project root directory in which the project lives in your local machine.
+
 ```
 docker run  --rm -v ~/Documents/2017lecture/573_DSCI_2017/lab/drug_consumption:/home/drug_consumption drug_consumption make -C 'home/drug_consumption' all
 ```
@@ -80,11 +85,3 @@ Python and R are used in this project. Here are the dependencies.
 - tidyverse
 - ezknitr
 - knitr
-
-
-
-
-
-
-
-
