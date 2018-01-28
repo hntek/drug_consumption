@@ -1,4 +1,4 @@
-# drug_consumption
+# Drug Consumption
 
 Drug addiction is one of the most serious issues the society is facing today. In this report that used this repo to create, I studied models predicting drug usage based on the personality profiles and demographics.
 

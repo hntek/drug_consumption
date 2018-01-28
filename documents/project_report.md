@@ -1,9 +1,4 @@
----
-title: "Who is \"High\"?: Predicting Drug Usage"
-author: "Hatice Cavusoglu"
-date: "January 26, 2018"
-output: github_document
----
+
 
 
 # Who is "High"?: Predicting Drug Usage
